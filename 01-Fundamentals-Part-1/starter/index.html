@@ -25,5 +25,41 @@
   </head>
   <body>
     <h1>JavaScript Fundamentals – Part 1</h1>
+    <script>
+      let country = "Viet Nam";
+      let continent = "Asia";
+      let population = 1000;
+      const isIsland = true;
+      language = "portuguese";
+      // console.log(
+      //   typeof isIsland,
+      //   typeof population,
+      //   typeof country,
+      //   typeof language
+      // );
+      console.log(isIsland);
+
+      // Code Challenge #1----------------
+      let massMark = 78,
+        heightMark = 1.69;
+      let massJohn = 92,
+        heightJohn = 1.95;
+      let IBMMark, IBMJohn;
+      IBMMark = massMark / heightMark ** 2;
+      IBMJohn = massJohn / heightJohn ** 2;
+      let markHigherBMI = IBMMark > IBMJohn;
+      console.log(IBMMark, IBMJohn, markHigherBMI);
+      // Code Challenge #2-----------------
+      if (IBMMark > IBMJohn) {
+        console.log(
+          `Mark's BMI (${IBMMark}) is higher than John's (${IBMJohn})!`
+        );
+      } else {
+        console.log(
+          `John's BMI (${IBMJohn}) is higher than Mark's (${IBMMark})!`
+        );
+      }
+    </script>
+    <!--  -->
   </body>
 </html>
