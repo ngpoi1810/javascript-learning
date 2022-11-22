@@ -62,28 +62,32 @@
       }
 
       // Code Challenge #3-----------------
-      let dolphinsScore1 = 97 
-      let dolphinsScore2 = 112
-      let dolphinsScore3 = 101
-      let koalasScore1 = 109
-      let koalasScore2 = 95 
-      let koalasScore3 = 106
-      const everageDolphins = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3
-      const everageKoalas = (koalasScore1 + koalasScore2 + koalasScore3) / 3
-      if(everageDolphins >= 100 || everageKoalas >= 100) {
-        if(everageDolphins > everageKoalas) {
+      let dolphinsScore1 = 97;
+      let dolphinsScore2 = 112;
+      let dolphinsScore3 = 101;
+      let koalasScore1 = 109;
+      let koalasScore2 = 95;
+      let koalasScore3 = 106;
+      const everageDolphins =
+        (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+      const everageKoalas = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
+      if (everageDolphins >= 100 || everageKoalas >= 100) {
+        if (everageDolphins > everageKoalas) {
           console.log(`Dolphins Team Win with`);
-        }
-        else if (everageDolphins === everageKoalas) {
-          console.log('Raw');
-        }
-        else {
+        } else if (everageDolphins === everageKoalas) {
+          console.log("Raw");
+        } else {
           console.log(`Koalas Team Win with ${everageKoalas} scores`);
         }
+      } else {
+        console.log("Do not any team enough score");
       }
-      else {
-        console.log('Do not any team enough score');
-      }
+
+      // Code Challenge #4
+       let values = 275
+       let tip = 50 <= values <= 300 ? values * 0.15 : values * 0.2 
+       let total = values + tip
+       console.log(`The bill was ${values}, the tip was ${tip}, and  the total value ${total}`);
     </script>
     <!--  -->
   </body>
