@@ -3,11 +3,12 @@
 //Code challenge #1
 let arr1 = [1, 3, 2]
 function printForecast(arr) {
+    let text = '';
     for(let i = 0; i < arr.length; i++) {
-        let text = ''
-        text +=  String(a[i]);
-        console.log(text)
+        text += `${String(arr[i])}C in ${i+1} days...`;
     }
+    return text;
 }
-printForecast(arr1)
+
+console.log(printForecast(arr1))
 
