@@ -13,6 +13,7 @@ let btnRoll = document.querySelector('.btn--roll')
 score0.textContent = 0
 score1.textContent = 0
 diceEl.classList.add('hidden')
+let currentStore = 0 //Biến điểm
 
 //Viết hàm xử lý lắc xúc xắc cho nút Roll Dice
 btnRoll.addEventListener('click', function () {
@@ -23,8 +24,15 @@ btnRoll.addEventListener('click', function () {
     let dice = Math.trunc(Math.random() * 6 + 1);
     //Khi click vào button sẽ gỡ class hidden của element ảnh xúc xắc
     diceEl.classList.remove('hidden')
-    diceEl.classList.add('zoom-in-zoom-out')
     //Dùng template string rồi gán biến ramdom vào src của element ảnh để khi nhấn vào sẽ hiện ra ảnh xúc xắc ramdom từ 1 - 6
     diceEl.src = `dice-${dice}.png`
+    //Kiểm tra nếu khác 1 thì gán điểm cho người chơi hiện tại
+    if(dice !== 1) {
+        currentStore += dice; //Gán cộng dồn điểm vào currentStore
+        current0.textContent = currentStore; //Hiển thị điểm vào element
+    } else {
+        //Ngược lại nếu bằng một sẽ đổi người chơi
+    }
+
 })
 
