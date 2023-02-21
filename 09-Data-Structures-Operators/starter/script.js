@@ -1,8 +1,7 @@
 'use strict';
 
 // Data needed for a later exercise
-const flights =
-    '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+const flights = '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
 // Data needed for first part of the section
 const restaurant = {
@@ -17,14 +16,10 @@ const restaurant = {
     },
     openingHours: {
         thu: {
-            open: 12,
-            close: 22,
-        },
-        fri: {
-            open: 11,
-            close: 23,
-        },
-        sat: {
+            open: 12, close: 22,
+        }, fri: {
+            open: 11, close: 23,
+        }, sat: {
             open: 0, // Open 24 hours
             close: 24,
         },
@@ -41,13 +36,13 @@ console.log(name, openingHours, categories)
 //Mutating destructuring
 let a = 111;
 let b = 999;
-const obj = {a:23,b:7,c:14};
-({a,b} = obj)
-console.log(a,b)
+const obj = {a: 23, b: 7, c: 14};
+({a, b} = obj)
+console.log(a, b)
 
 //Nested destructuring
-const  {fri: {open: o, close:c}} = openingHours
-console.log(o,c)
+const {fri: {open: o, close: c}} = openingHours
+console.log(o, c)
 
 //Spread Operator ========================================================
 //Làm cách thông thường ------
@@ -67,20 +62,28 @@ const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu)
 //Interables(lặp): arrays, strings, map, sets. NOT objects
 const str = 'Jonas'
-const letters = [...str,' ','S.'];
+const letters = [...str, ' ', 'S.'];
 console.log(letters) //lúc này thì spread sẽ tách các chữ cái của str ra và tạo thành một mảng
 console.log(...str)
 //còn khi ta dùng spread vào template literal thì sẽ bị lỗi
 // console.log(`${...str}) **Như này thì sẽ bị lỗi**
 
 //Rest pattern and Parameters ============================================
-
+/*
+Rest thì cũng giống như Spread nhưng thay vì khai báo bên phải dấu bằng như Spreadt thì ta sẽ khai kháo bên trái dấu bằng
+*/
+//Ta sẽ có ví dụ như nhau
+//*Một lưu ý là Rest phải được dùng ở cuối cùng khi khai báo
+const [x, y, ...others] = [1, 2, 3, 4, 5];
+console.log(x, y, others)
+//Bây giờ ta sẽ thêm một ví dụ nữa và sẽ dùng đến Object đã cho ở trên
+const {sat, ...weekdays} = restaurant.openingHours
+console.log(weekdays)
 
 //Code challenge #1
 let players1 = []
 let players2 = []
 let bayernMunich = {
-    gk: 'Vinh',
-    fieldPlayers: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+    gk: 'Vinh', fieldPlayers: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 }
 
