@@ -79,11 +79,38 @@ console.log(x, y, others)
 //Bây giờ ta sẽ thêm một ví dụ nữa và sẽ dùng đến Object đã cho ở trên
 const {sat, ...weekdays} = restaurant.openingHours
 console.log(weekdays)
+//Ví dụ thêm về Rest khi áp dụng trong function
+const add = function(...numbers) { //...numbers này là một rest parameters
+    console.log(numbers)
+}
+add(2,3)
+add(1,2,3,4)
+add(1,2,3,4,5,6,76,7,8)
+//Nâng cao hơn một xíu cho function khi dùng REST
+const n = [2,5,7,4,3,6] //Là chúng ta sẽ dùng Spread để thêm vào function
+add(...n)
+
+//SHORT CIRCUITING (&& AND ||)========================
+//Dùng data bất kỳ, trả về dữ liệu bất kỳ, được gọi là short-circuiting
+//OR*********
+console.log(3 || 'Jonas') // dấu HOẶC(||) sẽ trả về cho chúng ta giá trị truthy đầu tiên
+console.log('' || 'Jonas')
+console.log(true || 0)
+console.log(undefined || null) // Nếu cả hai là falsy thì sẽ lấy biến falsy cuối cùng
+//AND***********
+console.log(0 && 'Jonas') //Khi gặp falsy thì sẽ ngay lập tức trả về giá trị falsy
+console.log(7 && 'Jonas') //Khi cả hai đều là truthy thì sẽ trả về giá trị truthy cuối cùng
+//??************
+const number = 0 ?? 'Jonas' //?? thì 0 và ' ' sẽ không phải là falsy
+console.log(number)
+
 
 //Code challenge #1
-let players1 = []
-let players2 = []
+let players1 = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'
+]
+let players2 = ['k','l','n','o','p','q','k','z','x','y']
 let bayernMunich = {
-    gk: 'Vinh', fieldPlayers: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+    gk: 'Vinh', fieldPlayers: []
 }
 
