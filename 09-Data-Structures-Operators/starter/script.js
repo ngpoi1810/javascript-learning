@@ -26,6 +26,7 @@ const restaurant = {
     },
 };
 //Destructuring Arrays ==================================================
+console.log('=================Destructuring Arrays==================')
 // let [first, second] = restaurant.categories;
 // console.log(first, second)
 
@@ -45,6 +46,7 @@ const {fri: {open: o, close: c}} = openingHours
 console.log(o, c)
 
 //Spread Operator ========================================================
+console.log('=================Spread Operator==================')
 //Làm cách thông thường ------
 const arr = [7, 8, 9]
 //Cách như này làm vẫn được nhưng không hiệu quả
@@ -69,6 +71,7 @@ console.log(...str)
 // console.log(`${...str}) **Như này thì sẽ bị lỗi**
 
 //Rest pattern and Parameters ============================================
+console.log('==============Rest pattern and Parameters=================')
 /*
 Rest thì cũng giống như Spread nhưng thay vì khai báo bên phải dấu bằng như Spreadt thì ta sẽ khai kháo bên trái dấu bằng
 */
@@ -80,17 +83,18 @@ console.log(x, y, others)
 const {sat, ...weekdays} = restaurant.openingHours
 console.log(weekdays)
 //Ví dụ thêm về Rest khi áp dụng trong function
-const add = function(...numbers) { //...numbers này là một rest parameters
+const add = function (...numbers) { //...numbers này là một rest parameters
     console.log(numbers)
 }
-add(2,3)
-add(1,2,3,4)
-add(1,2,3,4,5,6,76,7,8)
+add(2, 3)
+add(1, 2, 3, 4)
+add(1, 2, 3, 4, 5, 6, 76, 7, 8)
 //Nâng cao hơn một xíu cho function khi dùng REST
-const n = [2,5,7,4,3,6] //Là chúng ta sẽ dùng Spread để thêm vào function
+const n = [2, 5, 7, 4, 3, 6] //Là chúng ta sẽ dùng Spread để thêm vào function
 add(...n)
 
 //SHORT CIRCUITING (&& AND ||)========================
+console.log('==============SHORT CIRCUITING (&& AND ||)=================')
 //Dùng data bất kỳ, trả về dữ liệu bất kỳ, được gọi là short-circuiting
 //OR*********
 console.log(3 || 'Jonas') // dấu HOẶC(||) sẽ trả về cho chúng ta giá trị truthy đầu tiên
@@ -106,6 +110,7 @@ console.log(number)
 
 
 //Code challenge #1
+console.log('==============Code challenge #1=================')
 const game = {
     team1: 'Bayern Munich',
     team2: 'Borrussia Dortmund',
@@ -138,29 +143,29 @@ const game = {
         ]
     ],
     score: '4.0',
-    scored:['Lewandowski','Gnarby','Lewandowski','Hummels'],
-    date:'Nov 9th, 2037',
+    scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+    date: 'Nov 9th, 2037',
     odds: {
-        team1:1.33,
-        x:3.25,
-        team2:6.5
+        team1: 1.33,
+        x: 3.25,
+        team2: 6.5
     }
 }
 //1
 const [players1, players2] = game.players
 console.log(players1)
 //2
-const [gk,...fieldPlayers] = players1
-console.log(gk,fieldPlayers)
+const [gk, ...fieldPlayers] = players1
+console.log(gk, fieldPlayers)
 //3
-const allPlayers = [...players1,...players2]
+const allPlayers = [...players1, ...players2]
 console.log(allPlayers)
 //4
-const players1Final = [...players1,'Thiago','Coutinho','Perisic']
+const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic']
 console.log(players1Final)
 //5
 const {team1, x: draw, team2} = game.odds
-console.log(team1,draw,team2)
+console.log(team1, draw, team2)
 //6
 const printGoals = function (...players) {
     console.log(players)
@@ -175,6 +180,7 @@ team1 < team2 && console.log('Team 1 is more likely to win');
 //Optional Chaining======================================================
 console.log(restaurant.openingHours.mon?.open);
 //Looping Objects: Object Keys, Values and Entries================
+console.log('===============Looping Objects: Object Keys, Values and Entries=====================')
 const properties = Object.keys(openingHours)
 console.log(properties)
 for (const day of properties) {
@@ -183,12 +189,62 @@ for (const day of properties) {
 const values = Object.values(openingHours)
 console.log(values)
 
-const entries =  Object.entries(openingHours)
+const entries = Object.entries(openingHours)
 console.log(entries)
-for(const [key, {open, close}] of entries) {
+for (const [key, {open, close}] of entries) {
     console.log(`On ${key} we open at ${open} and close at ${close}`)
 }
 //Coding challenge #2================================================
-for(const x of Object.entries(game.scored)) {
-    console.log(`${x[0]}: ${x[1]}`)
+console.log('===============CODING CHALLENGE #2=====================')
+//1
+for (const x of Object.entries(game.scored)) {
+    console.log(x[0] + ': ' + x[1])
 }
+//2
+let average = 0
+for (const x of Object.values(game.odds)) {
+    average += x
+}
+console.log(`Average score: ${average / 3}`)
+
+//3
+
+for (const [team, odd] of Object.entries(game.odds)) {
+    const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`
+    console.log(`Odd of ${teamStr}: ${odd}`)
+}
+
+//SETS ==============================================
+//Tạo sets
+// Trong set mình sẽ cho vào một interable thông thường thì sẽ dùng mảng
+console.log('==============SETS===============')
+const ordersSet = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta'])
+//Khi log ra bạn sẽ thấy những phần tử trùng lập trong Set sẽ được nhóm lại với nhau thành một
+//Các phần tử trong này sẽ là duy nhất(irrelevant)
+console.log(ordersSet)
+//Khi truyền vào một String thì Set sẽ tách ra thành các chữ cái là sẽ nhóm các phần tử giống nhau lại thành một
+console.log(new Set('nguyen'))
+//Chúng ta sẽ đi vào các cách làm việc với Set
+//1. Đầu tiên là về kích thước(sized) của Set
+console.log(ordersSet.size)
+//2. Tiếp theo chúng ta có thể kiểm tra một phần tử nào đó có trong Set hay không
+//Sẽ trả về giá trị True hoặc False
+console.log(ordersSet.has('Pizza'))
+console.log(ordersSet.has('Bread'))
+//3. Tiếp theo chúng ta có method thêm(add) phần tử mới vào Set
+//Khi thêm một phần tử rồi thêm tiếp một phần tử nữa giống nhau thì cái này sẽ bị ignore đi
+// Vì Set là duy nhất
+ordersSet.add('Garlic Bread')
+ordersSet.add('Garlic Bread')
+console.log(ordersSet)
+//4. Cuối cùng ta có method xóa(Delete)
+//Và không dùng index để delete được
+//orderSet.delete([1])
+ordersSet.delete('Risotto')
+
+//MAPS: FUNDAMENTALS=================================
+console.log('========MAPS: FUNDAMENTALS============')
+/*Đầu tiên thì Map cũng giống như Object là được lưu trữ trong cặp key và value
+Sự khác biệt ở đây là ở Map thì Keys có thể có Type bất kỳ. Trong Object thì keys
+cơ bản luôn là String. Nhưng trong map thì bạn có thể có bất kỳ type nào cho keys
+*/
