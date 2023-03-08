@@ -261,7 +261,7 @@ rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
 //Và bây giờ để đọc được data từ map chúng ta dùng method get
 console.log(rest.get('name')) //truyền key vào get để lấy được value
 //Ta sẽ có một ví dụ thú vị sau
-//Nó khá thông minh nhưng không thực sự dễ đọc nên đừng làm dụng loại mô hình này
+//Nó khá thông minh nhưng không thực sự dễ đọc nên đừng lạm dụng loại mô hình này
 //Đây chỉ là một ví dụ để cho thấy được sức mạnh khi có key Boolean trong map
 const time = 21
 console.log(rest.get(rest.get('open') < time < rest.get('close')))
@@ -286,3 +286,31 @@ console.log(rest)
 console.log(rest.get(arr1))
 
 //MAPS: INTERATION========================================
+console.log('==================MAPS: INTERATION==================')
+//Chúng ta sẽ dùng một cách khác nữa thay vì dùng set method cho Map
+// Quizz app
+const question = new Map([
+    ['question','What is the best programming language in the world?'],
+    [1,'C'],
+    [2,'Java'],
+    [3,'Javascript'],
+    ['correct',3],
+    [true,'Correct 🎉'],
+    [false,'Try again!']
+])
+console.log(question.get('question'))
+for(const [key, value] of question){
+    if(typeof key === 'number') {
+        console.log(`Answer ${key}: ${value}`)
+    }
+}
+const answer = Number(prompt('Your answer'))
+console.log(question.get(answer === question.get('correct')))
+// Có một cách chúng ta convert từ Object sang Map như sau+++++++++
+// Chúng ta sẽ dùng Object openingHour để làm ví dụ
+// console.log(Object.entries(openingHours))
+// const hoursMap = new Map(Object.entries(openingHours))
+// console.log(hoursMap)
+// Covert Map sang Array+++++++
+// console.log(...question)
+
