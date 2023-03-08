@@ -248,3 +248,41 @@ console.log('========MAPS: FUNDAMENTALS============')
 Sự khác biệt ở đây là ở Map thì Keys có thể có Type bất kỳ. Trong Object thì keys
 cơ bản luôn là String. Nhưng trong map thì bạn có thể có bất kỳ type nào cho keys
 */
+//Khởi tạo Map
+const rest = new Map()
+//Sau đó để fill out vào Map ta sẽ dùng method set()
+//Với tham số đầu tiên là key tiếp theo là value
+rest.set('name', 'Classico Italiano')
+rest.set(1, 'Firenze, Italy')
+rest.set(2, 'Lisbon, Portugal')
+//Hoặc bạn có thể fill out vào như thế này
+rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+    .set('open', 11).set('close', 23).set(true, 'We are open :D').set(false, 'We are closed :(')
+//Và bây giờ để đọc được data từ map chúng ta dùng method get
+console.log(rest.get('name')) //truyền key vào get để lấy được value
+//Ta sẽ có một ví dụ thú vị sau
+//Nó khá thông minh nhưng không thực sự dễ đọc nên đừng làm dụng loại mô hình này
+//Đây chỉ là một ví dụ để cho thấy được sức mạnh khi có key Boolean trong map
+const time = 21
+console.log(rest.get(rest.get('open') < time < rest.get('close')))
+//Tiếp theo ta đến với method has để check xem là key đó có tồn tại trong map hay không
+console.log(rest.has('categories')) // sẽ trả về true hoặc false
+//Ta đên với method delete
+rest.delete('name')
+rest.delete(2)
+console.log(rest)
+//2 method cuối cùng size và clear
+console.log(rest.size)
+rest.clear()//clear tất cả element hiện có trong map
+//Ta sẽ cho một trường hợp về việc dùng key là array trong map
+rest.set([1, 2],'Test')
+console.log(rest)
+console.log(rest.get([1, 2])) //Kêt quả sẽ ra underfined
+// Bởi vì các phần tử array ở trên set và get là khác nhau, chúng không cùng một địa chỉ nên việc gọi như thế này sẽ không đúng
+//Nên kết quả sẽ là underfined để khắc phục việc này bạn làm như sau
+const arr1 = [2, 3]
+rest.set(arr1,'Test 2')
+console.log(rest)
+console.log(rest.get(arr1))
+
+//MAPS: INTERATION========================================
