@@ -275,13 +275,13 @@ console.log(rest)
 console.log(rest.size)
 rest.clear()//clear tất cả element hiện có trong map
 //Ta sẽ cho một trường hợp về việc dùng key là array trong map
-rest.set([1, 2],'Test')
+rest.set([1, 2], 'Test')
 console.log(rest)
 console.log(rest.get([1, 2])) //Kêt quả sẽ ra underfined
 // Bởi vì các phần tử array ở trên set và get là khác nhau, chúng không cùng một địa chỉ nên việc gọi như thế này sẽ không đúng
 //Nên kết quả sẽ là underfined để khắc phục việc này bạn làm như sau
 const arr1 = [2, 3]
-rest.set(arr1,'Test 2')
+rest.set(arr1, 'Test 2')
 console.log(rest)
 console.log(rest.get(arr1))
 
@@ -290,22 +290,22 @@ console.log('==================MAPS: INTERATION==================')
 //Chúng ta sẽ dùng một cách khác nữa thay vì dùng set method cho Map
 // Quizz app
 const question = new Map([
-    ['question','What is the best programming language in the world?'],
-    [1,'C'],
-    [2,'Java'],
-    [3,'Javascript'],
-    ['correct',3],
-    [true,'Correct 🎉'],
-    [false,'Try again!']
+    ['question', 'What is the best programming language in the world?'],
+    [1, 'C'],
+    [2, 'Java'],
+    [3, 'Javascript'],
+    ['correct', 3],
+    [true, 'Correct 🎉'],
+    [false, 'Try again!']
 ])
 console.log(question.get('question'))
-for(const [key, value] of question){
-    if(typeof key === 'number') {
+for (const [key, value] of question) {
+    if (typeof key === 'number') {
         console.log(`Answer ${key}: ${value}`)
     }
 }
 // const answer = Number(prompt('Your answer'))
-const answer = true
+const answer = 3
 console.log(question.get(answer === question.get('correct')))
 // Có một cách chúng ta convert từ Object sang Map như sau+++++++++
 // Chúng ta sẽ dùng Object openingHour để làm ví dụ
@@ -340,11 +340,43 @@ console.log(gameEvents)
 //3
 console.log(gameEvents.size)
 //4
-for(const [key, value] of gameEvents) {
-    if(key <= 45 ) {
+for (const [key, value] of gameEvents) {
+    if (key <= 45) {
         console.log(`[FIRST HALF] ${key}: ${value}`)
-    }
-    else {
+    } else {
         console.log(`[SECOND HALF] ${key}: ${value}`)
     }
 }
+
+//Working with string==============================
+console.log('===================Working with string=================')
+const airline = 'TAP Air Portugal'
+const plane = 'A320'
+// Đầu tiên giống như Array ta có thể lấy ký tự từ một vị trí nhất định
+console.log(plane[0]) // Nhưng tất cả đều vẫn là string
+//Nên để chuyển thành Number thì ta phải convert
+//Tiếp theo ta có thể dùng length để tính chiều dài
+console.log(airline.length)
+//Một số Method phổ biến của String như:
+//Index of: Cho biết vị trí của phần tử
+console.log(airline.indexOf('r'))
+//Và đôi khi ta cũng cần tính từ cuối phần tử
+console.log(airline.lastIndexOf('r'))
+//Slice
+console.log(airline.slice(4))// slice sẽ cắt chuỗi và ta sẽ có một substring(chuỗi con)
+console.log(airline.slice(4, 7))//Bắt đầu cắt từ 4 và kết thúc ở 7
+console.log(typeof new String('Poi')) //type này sẽ cho ra object
+//String part 2
+//Chúng ta có method toLowerCase và toUpperCase
+const passenger = 'jOnAs'
+console.log(passenger.toLowerCase())
+console.log(passenger.toUpperCase())
+//Dùng biến này để thành Jonas
+const passengerLower = passenger.toLowerCase()
+const passengerJonas = passenger[0].toUpperCase() + passengerLower.slice(1)
+console.log(passengerJonas)
+// Tiếp theo ta có method Trim() với ví dụ như sau
+const emailUser = '  user@Gmail.CoM   \n'
+//trim(): Xóa khoảng trống đầu và cuối một string
+console.log(emailUser.toLowerCase().trim())
+// Tiếp theo là method: Replace
