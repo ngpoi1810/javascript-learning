@@ -348,3 +348,36 @@ for(const [key, value] of gameEvents) {
         console.log(`[SECOND HALF] ${key}: ${value}`)
     }
 }
+
+//Working with string==============================
+console.log('===================Working with string=================')
+const airline = 'TAP Air Portugal'
+const plane = 'A320'
+// Đầu tiên giống như Array ta có thể lấy ký tự từ một vị trí nhất định
+console.log(plane[0]) // Nhưng tất cả đều vẫn là string
+//Nên để chuyển thành Number thì ta phải convert
+//Tiếp theo ta có thể dùng length để tính chiều dài
+console.log(airline.length)
+//Một số Method phổ biến của String như:
+//Index of: Cho biết vị trí của phần tử
+console.log(airline.indexOf('r'))
+//Và đôi khi ta cũng cần tính từ cuối phần tử
+console.log(airline.lastIndexOf('r'))
+//Slice
+console.log(airline.slice(4))// slice sẽ cắt chuỗi và ta sẽ có một substring(chuỗi con)
+console.log(airline.slice(4, 7))//Bắt đầu cắt từ 4 và kết thúc ở 7
+console.log(typeof new String('Poi')) //type này sẽ cho ra object
+//String part 2
+//Chúng ta có method toLowerCase và toUpperCase
+const passenger = 'jOnAs'
+console.log(passenger.toLowerCase())
+console.log(passenger.toUpperCase())
+//Dùng biến này để thành Jonas
+const passengerLower = passenger.toLowerCase()
+const passengerJonas = passenger[0].toUpperCase() + passengerLower.slice(1)
+console.log(passengerJonas)
+// Tiếp theo ta có method Trim() với ví dụ như sau
+const emailUser = '  user@Gmail.CoM   \n'
+//trim(): Xóa khoảng trống đầu và cuối một string
+console.log(emailUser.toLowerCase().trim())
+// Tiếp theo là method: Replace
