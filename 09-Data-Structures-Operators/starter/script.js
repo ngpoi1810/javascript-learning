@@ -381,3 +381,72 @@ const emailUser = '  user@Gmail.CoM   \n'
 //trim(): Xóa khoảng trống đầu và cuối một string
 console.log(emailUser.toLowerCase().trim())
 // Tiếp theo là method: Replace
+const priceGB = '288,97D'
+const priceUS = priceGB.replace('D','$').replace(',','.')
+console.log(priceUS)
+//Ta có một trường hợp như sau cho replace
+const myName = 'nguyen hai nguyen'
+console.log(myName.replace('nguyen','hoa'))
+//khi log ra bạn có thể thấy là biển myName có hai chữ 'nguyen' nhưng khi ta
+//replace value 'nguyen' thì method chỉ replace value đầu tiên
+// Để có thể replace tất cả value 'nguyen' thì ta dùng regular expression(biểu thức chính quy)
+console.log(myName.replace(/nguyen/g,'hoa'))
+//Cuối cùng trong part 2 này là: Boolean
+const plane1 = 'Airbus A320neo'
+console.log(plane1.includes('A320')) // phải viết đúng cả viết hoa viết thường
+//ta có thể check nhờ vào boolean
+//kiểm tra value đầu và cuối chuỗi bằng startsWith và endsWith
+if(plane1.startsWith('Air') && plane1.endsWith('neo')) {
+    console.log('Part of the NEW Aribus family')
+}
+//example replace
+function checkItems(items) {
+    const bagage =  items.toLowerCase()
+    //Dùng include để kiểm tra xem trong đoạn string có knife hoặc bomb không
+    if(bagage.includes('knife') || bagage.includes('bomb')) {
+        console.log('You can\'t go on the board')
+    }
+    else {
+        console.log('You can go on the board')
+    }
+}
+checkItems('knife, Bomb, sOcks, cAmera')
+checkItems('clotHes, socKs')
+//Working with String part 3
+//Method: Split
+//Ta sẽ lấy ví dụ để hiểu split dễ hơn
+//Cho một chuỗi các tên sau đó thì viết hoa chữ cái đầu
+console.log('--------------------String Split--------------------')
+const capitalizeName = function (name) {
+    const names = name.split(' ')
+    const arrNames = []
+    for(const i of names)
+    {
+        arrNames.push(i[0].toUpperCase()+i.slice(1)) // Cách 1
+        arrNames.push(i.replace(i[0],i[0].toUpperCase())) //Cách 2
+    }
+    console.log(arrNames.join(' '))
+}
+capitalizeName('jessica ann smith davis')
+//Method Padding
+const message = 'Nguyen'
+//Khi log ra ta sẽ thấy dấu + sẽ thêm vào phía trước 4 lần nữa để đủ 10 value
+//Còn padEnd thì đang có là 10 value rồi nên là 14 - 10 còn thiếu 4
+//Nên padEnd thêm 4 dấu + vào phía để đủ 14 value
+console.log(message.padStart(10,'+').padEnd(14,'+'))
+//Example
+const maskCreditCard = function (number) {
+    const str = number + '' //dùng nối chuỗi để convert sang String
+    return str.slice(-4).padStart(str.length,'*')
+}
+console.log(maskCreditCard(47693754634))
+console.log(maskCreditCard(965792387459))
+//Method Repeat
+console.log(message.repeat(5))
+//example
+function planeInLine (n) {
+    console.log(`There are ${n} planes in life ${'✈️'.repeat(n)}`)
+}
+planeInLine(4)
+planeInLine(2)
+planeInLine(6)
