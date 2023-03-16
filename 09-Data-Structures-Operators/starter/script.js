@@ -275,13 +275,13 @@ console.log(rest)
 console.log(rest.size)
 rest.clear()//clear tất cả element hiện có trong map
 //Ta sẽ cho một trường hợp về việc dùng key là array trong map
-rest.set([1, 2],'Test')
+rest.set([1, 2], 'Test')
 console.log(rest)
 console.log(rest.get([1, 2])) //Kêt quả sẽ ra underfined
 // Bởi vì các phần tử array ở trên set và get là khác nhau, chúng không cùng một địa chỉ nên việc gọi như thế này sẽ không đúng
 //Nên kết quả sẽ là underfined để khắc phục việc này bạn làm như sau
 const arr1 = [2, 3]
-rest.set(arr1,'Test 2')
+rest.set(arr1, 'Test 2')
 console.log(rest)
 console.log(rest.get(arr1))
 
@@ -290,17 +290,17 @@ console.log('==================MAPS: INTERATION==================')
 //Chúng ta sẽ dùng một cách khác nữa thay vì dùng set method cho Map
 // Quizz app
 const question = new Map([
-    ['question','What is the best programming language in the world?'],
-    [1,'C'],
-    [2,'Java'],
-    [3,'Javascript'],
-    ['correct',3],
-    [true,'Correct 🎉'],
-    [false,'Try again!']
+    ['question', 'What is the best programming language in the world?'],
+    [1, 'C'],
+    [2, 'Java'],
+    [3, 'Javascript'],
+    ['correct', 3],
+    [true, 'Correct 🎉'],
+    [false, 'Try again!']
 ])
 console.log(question.get('question'))
-for(const [key, value] of question){
-    if(typeof key === 'number') {
+for (const [key, value] of question) {
+    if (typeof key === 'number') {
         console.log(`Answer ${key}: ${value}`)
     }
 }
@@ -340,11 +340,10 @@ console.log(gameEvents)
 //3
 console.log(gameEvents.size)
 //4
-for(const [key, value] of gameEvents) {
-    if(key <= 45 ) {
+for (const [key, value] of gameEvents) {
+    if (key <= 45) {
         console.log(`[FIRST HALF] ${key}: ${value}`)
-    }
-    else {
+    } else {
         console.log(`[SECOND HALF] ${key}: ${value}`)
     }
 }
@@ -382,34 +381,35 @@ const emailUser = '  user@Gmail.CoM   \n'
 console.log(emailUser.toLowerCase().trim())
 // Tiếp theo là method: Replace
 const priceGB = '288,97D'
-const priceUS = priceGB.replace('D','$').replace(',','.')
+const priceUS = priceGB.replace('D', '$').replace(',', '.')
 console.log(priceUS)
 //Ta có một trường hợp như sau cho replace
 const myName = 'nguyen hai nguyen'
-console.log(myName.replace('nguyen','hoa'))
+console.log(myName.replace('nguyen', 'hoa'))
 //khi log ra bạn có thể thấy là biển myName có hai chữ 'nguyen' nhưng khi ta
 //replace value 'nguyen' thì method chỉ replace value đầu tiên
 // Để có thể replace tất cả value 'nguyen' thì ta dùng regular expression(biểu thức chính quy)
-console.log(myName.replace(/nguyen/g,'hoa'))
+console.log(myName.replace(/nguyen/g, 'hoa'))
 //Cuối cùng trong part 2 này là: Boolean
 const plane1 = 'Airbus A320neo'
 console.log(plane1.includes('A320')) // phải viết đúng cả viết hoa viết thường
 //ta có thể check nhờ vào boolean
 //kiểm tra value đầu và cuối chuỗi bằng startsWith và endsWith
-if(plane1.startsWith('Air') && plane1.endsWith('neo')) {
+if (plane1.startsWith('Air') && plane1.endsWith('neo')) {
     console.log('Part of the NEW Aribus family')
 }
+
 //example replace
 function checkItems(items) {
-    const bagage =  items.toLowerCase()
+    const bagage = items.toLowerCase()
     //Dùng include để kiểm tra xem trong đoạn string có knife hoặc bomb không
-    if(bagage.includes('knife') || bagage.includes('bomb')) {
+    if (bagage.includes('knife') || bagage.includes('bomb')) {
         console.log('You can\'t go on the board')
-    }
-    else {
+    } else {
         console.log('You can go on the board')
     }
 }
+
 checkItems('knife, Bomb, sOcks, cAmera')
 checkItems('clotHes, socKs')
 //Working with String part 3
@@ -420,10 +420,9 @@ console.log('--------------------String Split--------------------')
 const capitalizeName = function (name) {
     const names = name.split(' ')
     const arrNames = []
-    for(const i of names)
-    {
-        arrNames.push(i[0].toUpperCase()+i.slice(1)) // Cách 1
-        arrNames.push(i.replace(i[0],i[0].toUpperCase())) //Cách 2
+    for (const i of names) {
+        arrNames.push(i[0].toUpperCase() + i.slice(1)) // Cách 1
+        arrNames.push(i.replace(i[0], i[0].toUpperCase())) //Cách 2
     }
     console.log(arrNames.join(' '))
 }
@@ -433,20 +432,58 @@ const message = 'Nguyen'
 //Khi log ra ta sẽ thấy dấu + sẽ thêm vào phía trước 4 lần nữa để đủ 10 value
 //Còn padEnd thì đang có là 10 value rồi nên là 14 - 10 còn thiếu 4
 //Nên padEnd thêm 4 dấu + vào phía để đủ 14 value
-console.log(message.padStart(10,'+').padEnd(14,'+'))
+console.log(message.padStart(10, '+').padEnd(14, '+'))
 //Example
 const maskCreditCard = function (number) {
     const str = number + '' //dùng nối chuỗi để convert sang String
-    return str.slice(-4).padStart(str.length,'*')
+    return str.slice(-4).padStart(str.length, '*')
 }
 console.log(maskCreditCard(47693754634))
 console.log(maskCreditCard(965792387459))
 //Method Repeat
 console.log(message.repeat(5))
+
 //example
-function planeInLine (n) {
+function planeInLine(n) {
     console.log(`There are ${n} planes in life ${'✈️'.repeat(n)}`)
 }
+
 planeInLine(4)
 planeInLine(2)
 planeInLine(6)
+//Code challenge #4======================
+console.log('================Code challenge #4==================')
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+const btnEl = document.querySelector('button')
+btnEl.addEventListener('click', function () {
+    //lấy vule từ text area
+    const txtAreaEl = document.querySelector('textarea').value
+    //sau đó chúng ta sẽ chuyển sang dạng chữ thường cho text
+    const strArr = txtAreaEl.toLowerCase().split('\n')
+    splitString(strArr)
+})
+//Tạo một function dùng để xử lý các chuỗi
+function splitString(arrStr) {
+    let count = 1
+    //ta có một mảng chước các chuỗi
+    for (const i of arrStr) {
+        // chạy for để get value rồi dùng trim để xóa khoảng trống đầu cuối
+        //sau đó dùng split để cắt chuối ra thành 2 phần
+        const arrName = i.trim().split('_')
+        //Cuối cùng là xử lý in hoa chữ cái đầu cho phần tử thứ 2 trong mảng
+        console.log((arrName[0]+arrName[1][0].toUpperCase()+arrName[1].slice(1)).padEnd(30)+'✅'.repeat(count++))
+    }
+}
+//Cách 2 challenge #4
+console.log('===========Cach 2=============')
+btnEl.addEventListener('click',function (){
+    const text = document.querySelector('textarea').value
+    const rows = text.split('\n')
+    for(const [i, row] of rows.entries()) {
+        const [first, second] = row.toLowerCase().trim().split('_')
+        const output = `${first}${second.replace(second[0],second[0].toUpperCase())}`
+        console.log(`${output.padEnd(20)}${'✅'.repeat(i+1)}`)
+    }
+})
