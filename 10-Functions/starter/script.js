@@ -19,7 +19,14 @@ const createBooking = function (flightNum, numPassengers = 1,price = 199) {
     bookingArr.push(booking)
 }
 createBooking('LH123')
-//cách này giúp bạn bỏ ra một value nêu ko muốn set giá trị cho nó
+//cách này giúp bạn bỏ ra một value nếu ko muốn set giá trị cho nó thì vẫn sẽ lấy giá trị mặc định
 createBooking('lh123',undefined,1000)
+// How Passing Arguments Works: Value vs. Reference========================
+//phần này thì giống như primitive types với reference types
 
-// How Passing Arguments Works: Value vs. Reference
+//First class and Higher-Order function========================
+/*
+* Luôn nhớ function là objects
+* */
+
+//tìm hiểu về Bind, Apply, Call method----------------
