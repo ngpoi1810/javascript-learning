@@ -365,7 +365,7 @@ console.log(airline.lastIndexOf('r'))
 //Slice
 console.log(airline.slice(4))// slice sẽ cắt chuỗi và ta sẽ có một substring(chuỗi con)
 console.log(airline.slice(4, 7))//Bắt đầu cắt từ 4 và kết thúc ở 7
-console.log(typeof new String('Poi')) //type này sẽ cho ra object
+// console.log(typeof new String('Poi')) //type này sẽ cho ra object
 //String part 2
 //Chúng ta có method toLowerCase và toUpperCase
 const passenger = 'jOnAs'

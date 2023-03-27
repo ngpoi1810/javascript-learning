@@ -56,8 +56,31 @@ const book = lufthansa.book;
 //regular function thì keyword this sẽ là underfined
 //và làm sao để fix được và làm cách nào để xác định rõ this keyword sẽ trỏ vào đâu
 //đầu tiên ta sẽ dùng call method
-book.call(eurowings,23,'AAAA') // tham số đầu tiên là nơi this keyword trỏ tới còn lại
+book.call(eurowings,23,'AAAA')// tham số đầu tiên là nơi this keyword trỏ tới còn lại
 //là 2 tham số của book method
 //Apply method cũng tương tự nhưng sau ghi truyền object để xác định this keyword trở thì những tham số sau phải cho vào một array ví dụ như sau
 const arrEuro = [222, 'BBBB']
 book.apply(eurowings,arrEuro)
+//Bind Method-------------------
+/*Sự khác nhau của bind ở đây là không gọi function ngay lập tức
+* Thay vào đó nó trả về một new function
+* Nơi mà this keyword được ràng buộc
+* */
+//Ví  dụ về bind
+const bookEW = book.bind(eurowings)// bind sẽ tạo ra luôn cho mình một function eurowings mới
+bookEW(103,'Poi')
+
+//Coding Challenge #1===============================
+console.log('-------Code challenge #1----------')
+const poll = {
+    question: "What is your favourite programming language?",
+    options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"],
+    // This generates [0, 0, 0, 0]. More in the next section!
+    answers: new Array(4).fill(0),
+    registerNewAnswer(){
+        console.log(this.question)
+        for(const value of this.options){
+            console.log(value)
+        }
+    }
+};
