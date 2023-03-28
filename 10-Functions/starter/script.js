@@ -104,3 +104,5 @@ const poll = {
 //Gọi sự kiện click để hiển thị câu khảo sát
 document.querySelector('.poll').addEventListener('click',poll.registerNewAnswer.bind(poll))
 poll.displayResults.call(poll, [5, 2, 3])
+
+//Immediately Invoked Function Expression (IIFE)=============================
