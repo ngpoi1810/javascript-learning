@@ -88,12 +88,19 @@ const poll = {
         * cuối cùng là sẽ cộng 1 đơn vị tại vị trí đó trong mảng
         * */
         typeof bbb === 'number' && bbb < this.answers.length && this.answers[bbb]++
-        console.log(this.answers)
+        this.displayResults()
+        this.displayResults('string')
     },
-    displayResults() {
-
+    displayResults(type = 'array') {
+    if(type === 'array') {
+        console.log(this.answers)
+    }
+    if(type === 'string'){
+        console.log(`Poll results are ${this.answers.join(',')}`)
+    }
     }
 };
 // poll.registerNewAnswer()
 //Gọi sự kiện click để hiển thị câu khảo sát
 document.querySelector('.poll').addEventListener('click',poll.registerNewAnswer.bind(poll))
+poll.displayResults.call(poll, [5, 2, 3])
