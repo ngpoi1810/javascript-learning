@@ -1,4 +1,18 @@
 'use strict';
+/*Engine and Runtime----------------------------------------
+- Compilation và Interpretation
++ Compilation: Tất cả source code sẽ được convert thành mã máy một lần và sau đó mã máy sẽ được
+viết trong một portable file để có thể thực thi trên bất kỳ máy nào
++ Interpretation: Có một thông dịch chạy qua mã nguồn sau đó sẽ thực thi nó line by line
+- Trước đây JS dùng Interpretation language nhưng về sau thì performance chậm rất chậm hơn
+Compilation language nên thay vì dùng simple Interpretation thì JS bây giờ mix Compilation
+và Interpretation lại với nhau và được gọi là Just-in-time compilation (JIT)
+* */
+/*Execution context and The call stack------------------------------
+
+*
+* */
+
 /*các primitive Type gồm có
 
 *Number, String, Boolean, Underfined, Null, Symbol, BigInt
