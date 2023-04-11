@@ -9,6 +9,9 @@ Compilation language nên thay vì dùng simple Interpretation thì JS bây gi�
 và Interpretation lại với nhau và được gọi là Just-in-time compilation (JIT)
 * */
 /*Execution context and The call stack------------------------------
+- Thì sau khi compile xong và code chuẩn bị được thực thi
+Và sau đó cái được gọi là global execution context được tạo ra (for top-level code).
+Thì top-level code thì về cơ bản là code mà không nằm trong bất kỳ function nào
 
 *
 * */
