@@ -12,6 +12,16 @@ và Interpretation lại với nhau và được gọi là Just-in-time compilat
 - Thì sau khi compile xong và code chuẩn bị được thực thi
 Và sau đó cái được gọi là global execution context được tạo ra (for top-level code).
 Thì top-level code thì về cơ bản là code mà không nằm trong bất kỳ function nào
+- Execution Context là một khái niệm trừu tượng nên giải thích một cách cơ bản nhất
+thì nó như là một môi trường trong đó đoạn JS được thực thi. Nó giống như một cái hộp lưu trữ
+tất cả thông tin cần thiết cho một số mã được thực thi và JS code luôn chạy bên trong một
+execution context
+- Hãy làm điều này trực quan hơn một chút: Hãy thử tưởng tượng bạn order một cái pizza. Thường
+thì pizza sẽ được giao đến bên trong một cái hộp và nó cũng có một số thứ cần thiết khác để bạn có
+thể ăn được pizza chẳng hạn là dao kéo hoặc biên lai chẳng hạn để bạn trả tiền cho chiếc bánh pizza
+trước khi ăn nó. Vậy ta hãy phân tích pizza là JS code sẽ được thực thi và chiếc hộp là execution
+context cho chiếc bánh pizza. Và nĩa và hóa đơn là thứ cần thiết để ăn pizza hãy nói cách khác
+là dùng thể thực thi code
 
 *
 * */
