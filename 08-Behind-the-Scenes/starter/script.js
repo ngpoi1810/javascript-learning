@@ -22,6 +22,8 @@ thể ăn được pizza chẳng hạn là dao kéo hoặc biên lai chẳng h�
 trước khi ăn nó. Vậy ta hãy phân tích pizza là JS code sẽ được thực thi và chiếc hộp là execution
 context cho chiếc bánh pizza. Và nĩa và hóa đơn là thứ cần thiết để ăn pizza hãy nói cách khác
 là dùng thể thực thi code
+- Execution context thuộc Arrow function thì không nhận được đối số và từ khóa 'this'
+thay vào đó nó sẽ nhận đối số và từ khóa 'this' từ func cha gần nhất của chúng
 
 *
 * */
