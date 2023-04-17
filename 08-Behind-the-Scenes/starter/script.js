@@ -24,7 +24,8 @@ context cho chiếc bánh pizza. Và nĩa và hóa đơn là thứ cần thiết
 là dùng thể thực thi code
 - Execution context thuộc Arrow function thì không nhận được đối số và từ khóa 'this'
 thay vào đó nó sẽ nhận đối số và từ khóa 'this' từ func cha gần nhất của chúng
-
+- Call stack về cơ bản thì là nơi mà các execution context xếp chông lên nhau để mà theo dõi
+nơi chúng thực hiện chương trình
 *
 * */
 
@@ -72,5 +73,4 @@ thay vào đó nó sẽ nhận đối số và từ khóa 'this' từ func cha g
 * - Và mọi scope luôn có quyền truy cập tất cả các biến từ các phạm vi bên ngoài của nó và đây cũng là scope chain
 * - Khi một biến không phải là current scope thì engine sẽ look up trong scope chain đến khi tìm thấy biến đó. Đây được gọi là Variable lookup
 * - Điều quan trọng là thứ tự các function được gọi không ảnh hưởng gì đến scope chain
-*
 * */
