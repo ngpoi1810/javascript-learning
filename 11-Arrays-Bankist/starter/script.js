@@ -61,6 +61,18 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const displayMovements = function (movements) {
+  containerMovements.innerHTML = '';
+  movements.forEach((mov, i) => {
+    const type = mov > 0 ? 'deposit' : 'withdrawal';
+    const htmlString = `<div class="movements__row">
+    <div class="movements__type movements__type--${type}">${i} ${type}</div>
+    <div class="movements__value">${mov}€</div>
+  </div>`;
+    containerMovements.insertAdjacentHTML('afterbegin', htmlString);
+  });
+};
+displayMovements(account1.movements);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -74,3 +86,25 @@ const currencies = new Map([
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+// Code challenge #1------------------------------
+const checkDogs = function (arr1, arr2) {
+  const bothArr = arr1.slice(1, -1).concat(arr2.slice(1, -1));
+  bothArr.forEach((age, i) => {
+    const check =
+      age > 3 ? `an adult, and is ${age} years old` : `still a puppy 🐶`;
+    console.log(`Dog number ${i + 1} is ${check}`);
+  });
+};
+checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
+// Code challenge #2
+const calcAverageHumanAge = function (ageDogs) {
+  const init = 0
+  const humanAge = ageDogs.map(age => {
+    return age <= 2 ? 2 * age : 16 + age * 4;
+  }).filter((a) => a >= 18)
+  const average = humanAge.reduce((acc, cur, i) => {
+    return acc + cur;
+  },init) / humanAge.length;
+  console.log(average);
+};
+calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3])
