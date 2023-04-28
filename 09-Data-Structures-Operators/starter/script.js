@@ -27,8 +27,8 @@ const restaurant = {
 };
 //Destructuring Arrays ==================================================
 console.log('=================Destructuring Arrays==================')
-// let [first, second] = restaurant.categories;
-// console.log(first, second)
+let [first, second] = restaurant.categories;
+console.log(first, second)
 
 //Destructuring Objects ===============================================
 const {name, openingHours, categories} = restaurant // Phải đặt tên biến đúng với tên key trong object

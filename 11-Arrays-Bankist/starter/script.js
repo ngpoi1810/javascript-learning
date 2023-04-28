@@ -61,12 +61,13 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-const displayMovements = function (acc) {
+const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
-  acc.movements.forEach((mov, i) => {
+  const movs = sort ? acc.movements.slice().sort((a,b) => a - b) : acc.movements
+  movs.forEach((mov, i) => {
     const type = mov > 0 ? 'deposit' : 'withdrawal';
     const htmlString = `<div class="movements__row">
-    <div class="movements__type movements__type--${type}">${i} ${type}</div>
+    <div class="movements__type movements__type--${type}">${i+1} ${type}</div>
     <div class="movements__value">${mov}€</div>
   </div>`;
     containerMovements.insertAdjacentHTML('afterbegin', htmlString);
@@ -149,6 +150,17 @@ btnTransfer.addEventListener('click',function(e) {
     console.log('Transfer fail');
   }
 })
+// Loan mount
+btnLoan.addEventListener('click',function(e) {
+  e.preventDefault()
+  const amount = Number(inputLoanAmount.value)
+  if(amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)){
+    currentAccount.movements.push(amount)
+    updateUI(currentAccount)
+  }
+  inputLoanAmount.value = ''
+
+})
 // Delete account
 btnClose.addEventListener('click',function(e) {
   e.preventDefault()
@@ -159,7 +171,13 @@ btnClose.addEventListener('click',function(e) {
     inputCloseUsername.value = inputClosePin.value = ''
   }
 })
-
+// Sort
+let flag = false;
+btnSort.addEventListener('click',function(e) {
+  e.preventDefault()
+  displayMovements(currentAccount,!flag)
+  flag = !flag
+})
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
