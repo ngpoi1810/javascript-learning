@@ -5,7 +5,7 @@
 122C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\type-fest\source\fixed-length-array.d.ts121436361000000000 0
 116C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\css-tree\lib\common\TokenStream.js121436361000000000 0
 124C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\posthtml-parser\dist\location-tracker.d.ts121436361000000000 0
-89C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\src\js\controller.js133281764181734364 0
+89C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\src\js\controller.js133283558844694590 0
 72C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\src132886415200000000 1
 95C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\lmdb\index.js121436361000000000 0
 141C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_dump.1121436361000000000 0
@@ -25,7 +25,7 @@
 109C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\css-tree\lib\lexer\error.js121436361000000000 0
 86C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\csso133279893864578190 1
 129C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\fs-search\fs-search.linux-x64-musl.node121436361000000000 0
-73C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist133281764182831975 1
+73C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist133283558853939593 1
 88C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\base-x133279893864568259 1
 120C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\core\lib\public\BundleGroup.js121436361000000000 0
 98C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\.bin\js-yaml.ps1133279893865933002 0
@@ -151,7 +151,7 @@
 130C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\runtime-js\lib\helpers\node\js-loader.js121436361000000000 0
 92C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\acorn\dist133279893821398569 1
 112C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\source-map\lib\mapping-list.js131369414910000000 0
-94C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\favicon.8b2f57bf.png133281745514856120 0
+94C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\favicon.8b2f57bf.png133283558853197505 0
 108C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\dotenv-expand\package.json133279893861847875 0
 126C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@swc\helpers\lib\_assert_this_initialized.js133133340060000000 0
 100C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\msgpackr\stream.js121436361000000000 0
@@ -829,7 +829,7 @@
 120C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\transformer-babel\src\utils.js121436361000000000 0
 109C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@jridgewell\source-map\dist133279893819147253 1
 98C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\terser\lib\utils133279893832684016 1
-84C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.html133281745515162578 0
+84C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.html133283558853197505 0
 108C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\svgo\plugins\removeDesc.js121436361000000000 0
 142C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\lightningcss-win32-x64-msvc\lightningcss.win32-x64-msvc.node121436361000000000 0
 112C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\core\src\buildCache.js121436361000000000 0
@@ -4263,7 +4263,7 @@
 110C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\cache\src\FSCache.js121436361000000000 0
 125C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@mischnic\json-sourcemap\dist\index.js.flow132940798760000000 0
 119C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\cache\src\IDBCache.browser.js121436361000000000 0
-91C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.e37f48ea.js133281764182761778 0
+91C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.e37f48ea.js133283558853894304 0
 108C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\cache\src\index.js121436361000000000 0
 112C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\cache\src\LMDBCache.js121436361000000000 0
 111C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\@parcel\cache\lib\IDBCache.js121436361000000000 0
@@ -4412,11 +4412,11 @@
 95C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\.bin\svgo.cmd133279893866379486 0
 93C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\.bin\terser133279893866419480 0
 109C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\node_modules\.bin\update-browserslist-db133279893866474779 0
-92C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\icons.21bad73c.svg133281745515293235 0
-92C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\icons.dfd7a6db.svg133281745515303307 0
+92C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\icons.21bad73c.svg133283558853482690 0
+92C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\icons.dfd7a6db.svg133283558853502696 0
 95C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.62406edb.js.map133279901189479338 0
-95C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.e37f48ea.js.map133281764182811959 0
-92C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.f7626f62.css133281745514730164 0
-96C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.f7626f62.css.map133281745514816126 0
-91C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\logo.726d37a8.png133281745515837730 0
+95C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.e37f48ea.js.map133283558853924206 0
+92C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.f7626f62.css133283558853197505 0
+96C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\index.f7626f62.css.map133283558853308446 0
+91C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\logo.726d37a8.png133283558853748698 0
 93C:\Users\Admin\Desktop\complete-javascript-course\18-forkify\starter\dist\starter.3464ddca.js133279901189429293 0
