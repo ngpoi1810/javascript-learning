@@ -44,7 +44,6 @@ function getCountryData(country) {
 getCountryData('portugal')
 
 // Event loop
-
 /*
 - Vì JS chỉ có thể "Do one thing" tại một lúc và không thể nào xảy ra việc multitasking. Tiếp theo ta sẽ có WebAPIs Enviroment
 nhũng cái này là một vài APIs được cung cấp đến Engine nhưng cái này thì không thực sự là một phần của chính JS ví dụ như

@@ -68,7 +68,7 @@ const letters = [...str, ' ', 'S.'];
 console.log(letters) //lúc này thì spread sẽ tách các chữ cái của str ra và tạo thành một mảng
 console.log(...str)
 //còn khi ta dùng spread vào template literal thì sẽ bị lỗi
-// console.log(`${...str}) **Như này thì sẽ bị lỗi**
+// console.log(`${...str}`) **Như này thì sẽ bị lỗi**
 
 //Rest pattern and Parameters ============================================
 console.log('==============Rest pattern and Parameters=================')
