@@ -684,6 +684,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _iconsSvg = require("url:../../img/icons.svg");
 var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 var _fractional = require("fractional");
+console.log((0, _iconsSvgDefault.default));
 class RecipeView {
     #parentElement = document.querySelector(".recipe");
     #data;
