@@ -8,7 +8,8 @@ const recipeContainer = document.querySelector('.recipe');
 
 const controlRecipe = async function () {
   try {
-    const id = window.location.hash.slice(1);
+    
+    const id = window.location.hash.slice(1);// Chỗ này là cắt chuỗi sau dấu # để lấy id
     console.log(id);
     if (!id) return;
     //1 loading recipe

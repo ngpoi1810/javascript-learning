@@ -565,7 +565,7 @@ const recipeContainer = document.querySelector(".recipe");
 ///////////////////////////////////////
 const controlRecipe = async function() {
     try {
-        const id = window.location.hash.slice(1);
+        const id = window.location.hash.slice(1); // Chỗ này là cắt chuỗi sau dấu # để lấy id
         console.log(id);
         if (!id) return;
         //1 loading recipe
@@ -741,7 +741,7 @@ class RecipeView {
         [
             "hashchange",
             "load"
-        ].forEach((ev)=>window.addEventListener(ev, handler));
+        ].forEach((ev)=>window.addEventListener(ev, handler)); //Đây là cách để giảm duplicate code
     }
     #generateMarkup() {
         return `<figure class="recipe__fig">

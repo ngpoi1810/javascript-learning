@@ -59,7 +59,7 @@ class RecipeView {
   }
 
   addHandlerRender(handler) {
-    ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
+    ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler)); //Đây là cách để giảm duplicate code
   }
   #generateMarkup() {
     return `<figure class="recipe__fig">
