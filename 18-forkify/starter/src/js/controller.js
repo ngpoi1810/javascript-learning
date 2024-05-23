@@ -2,16 +2,18 @@ import * as model from './model.js';
 
 import recipeView from './views/recipeView.js';
 import searchView from './views/searchView.js';
-import recipeSearch from './views/searchView.js';
-
-
+import resultsView from './views/resultView.js';
+import resultView from './views/resultView.js';
+import paginationView from './views/paginationView.js';
 
 ///////////////////////////////////////
-
+if (module.hot) {
+  module.hot.accept();
+}
 const controlRecipe = async function () {
   try {
     const id = window.location.hash.slice(1); // Chỗ này là cắt chuỗi sau dấu # để lấy id
-    
+
     if (!id) return;
     //1 loading recipe
     recipeView.renderSpinner();
@@ -26,18 +28,19 @@ const controlRecipe = async function () {
 };
 const controlSearchResults = async function () {
   try {
+    resultsView.renderSpinner();
     const query = searchView.getQuery();
     if (!query) return;
     await model.loadSearchResults(query);
-    console.log(model.state.search.results);
     
+    resultView.render(model.getSearchResultsPage(5));
+    paginationView.render(model.state.search)
   } catch (err) {
     throw err;
   }
 };
-controlSearchResults();
 function init() {
   recipeView.addHandlerRender(controlRecipe);
-  searchView.addHandlerSearch(controlSearchResults)
+  searchView.addHandlerSearch(controlSearchResults);
 }
 init();
