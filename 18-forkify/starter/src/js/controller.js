@@ -17,6 +17,8 @@ const controlRecipe = async function () {
     if (!id) return;
     //1 loading recipe
     recipeView.renderSpinner();
+    //
+    resultView.update(model.getSearchResultsPage());
     // Vì bên model là một Promise nên khi gọi model bên này thêm "await" vào
     await model.loadRecipe(id);
     console.log(model.state.recipe);

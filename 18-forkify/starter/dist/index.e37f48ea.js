@@ -577,6 +577,8 @@ const controlRecipe = async function() {
         if (!id) return;
         //1 loading recipe
         (0, _recipeViewJsDefault.default).renderSpinner();
+        //
+        (0, _resultViewJsDefault.default).update(_modelJs.getSearchResultsPage());
         // Vì bên model là một Promise nên khi gọi model bên này thêm "await" vào
         await _modelJs.loadRecipe(id);
         console.log(_modelJs.state.recipe);
@@ -1181,8 +1183,8 @@ class View {
         const curElements = Array.from(this._parentElement.querySelectorAll("*"));
         newElements.forEach((newEl, i)=>{
             const curEl = curElements[i];
-            console.log(curEl, newEl.isEqualNode(curEl));
             if (!newEl.isEqualNode(curEl) && newEl.firstChild?.nodeValue.trim() !== "") curEl.textContent = newEl.textContent;
+            if (!newEl.isEqualNode(curEl)) Array.from(newEl.attributes).forEach((attr)=>curEl.setAttribute(attr.name, attr.value));
         });
     }
     _clear() {
@@ -1266,8 +1268,9 @@ class ResultsView extends (0, _viewDefault.default) {
         return this._data.map(this._generateMarkupPreview).join("");
     }
     _generateMarkupPreview(result) {
+        const id = window.location.hash.slice(1);
         return `<li class="preview">
-  <a class="preview__link" href="#${result.id}">
+  <a class="preview__link ${result.id === id ? "preview__link--active" : ""} " href="#${result.id}">
     <figure class="preview__fig">
       <img src=${result.image} alt=${result.title} />
     </figure>
