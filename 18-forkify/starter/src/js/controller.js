@@ -2,9 +2,9 @@ import * as model from './model.js';
 
 import recipeView from './views/recipeView.js';
 import searchView from './views/searchView.js';
-import resultsView from './views/resultView.js';
 import resultView from './views/resultView.js';
 import paginationView from './views/paginationView.js';
+import bookmarksView from './views/bookmarksView.js';
 
 ///////////////////////////////////////
 // if (module.hot) {
@@ -19,9 +19,10 @@ const controlRecipe = async function () {
     recipeView.renderSpinner();
     //
     resultView.update(model.getSearchResultsPage());
+    bookmarksView.update(model.state.bookmarks);
     // Vì bên model là một Promise nên khi gọi model bên này thêm "await" vào
     await model.loadRecipe(id);
-    console.log(model.state.recipe);
+    
     //2 rendering recipe
     recipeView.render(model.state.recipe);
   } catch (err) {
@@ -30,11 +31,10 @@ const controlRecipe = async function () {
 };
 const controlSearchResults = async function () {
   try {
-    resultsView.renderSpinner();
+    resultView.renderSpinner();
     const query = searchView.getQuery();
     if (!query) return;
     await model.loadSearchResults(query);
-
     resultView.render(model.getSearchResultsPage());
     paginationView.render(model.state.search);
   } catch (err) {
@@ -53,14 +53,21 @@ const controlServings = function (newServings) {
   recipeView.update(model.state.recipe);
 };
 const controlAddBookmark = function () {
+  // 1) Thêm/Xóa bookmark
   if (!model.state.recipe.bookmarked) model.addBookmark(model.state.recipe);
   else model.deleteBookmark(model.state.recipe.id);
-
-  console.log(model.state.recipe);
+  // 2) Cập nhật Recipe view
   recipeView.update(model.state.recipe);
+  // 3) Render bookmarks
+  bookmarksView.render(model.state.bookmarks);
 };
 
+// const controlBookmarks = function () {
+//   bookmarksView.render(model.state.bookmarks);
+// };
+
 function init() {
+  bookmarksView.addHandlerRender(controlAddBookmark);
   recipeView.addHandlerRender(controlRecipe);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
