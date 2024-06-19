@@ -1,4 +1,4 @@
-9579
+9580
 125C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\caniuse-lite\data\features\js-regexp-lookbehind.js133629884063474283 0
 113C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\msgpackr\dist\index-no-eval.min.js.map133629884053260435 0
 92C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\binary-extensions133629884041891939 1
@@ -29,6 +29,16 @@
 90C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\forkify-flowchart-part-1.png133149793050953099 0
 99C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\v8-compile-cache\LICENSE133629884043316119 0
 84C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@mischnic133629884034665086 1
+171C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\subfolder1\subfolder2133629884087214338 1
+121C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\css-select\lib\pseudo-selectors\pseudos.js.map133629884055018771 0
+105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\source-map-js\lib\array-set.js133629884040424763 0
+108C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\array\to-sorted.js133629884091006179 0
+95C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\htmlnano\LICENSE.txt133629884056525878 0
+116C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\lmdb\node_modules\node-addon-api\index.js133629884097030452 0
+99C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@lezer\lr\dist\index.cjs133629884098914803 0
+108C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\svgo\plugins\removeUselessDefs.js133629884057110052 0
+91C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\views\addRecipeView.js133632877454919998 0
+91C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\terser\README.md133629884054276785 0
 118C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\array-buffer-view-core.js133629884056774842 0
 123C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\css-select\lib\pseudo-selectors\filters.d.ts.map133629884053869118 0
 100C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\terser\lib\mozilla-ast.js133629884052207984 0
@@ -36,7 +46,7 @@
 108C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\workers\lib\WorkerFarm.js133629884058626012 0
 122C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\caniuse-lite\data\features\css-focus-visible.js133629884059668177 0
 139C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\css-select\node_modules\dom-serializer\lib\esm\foreignNames.d.ts133629884100963352 0
-66C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist133631929302471206 1
+66C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist133632910087846675 1
 107C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\symbol\species.js133629884087822779 0
 120C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\runtime-browser-hmr\src\HMRRuntime.js133629884069773407 0
 105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\css-tree\cjs\walker\create.cjs133629884052664080 0
@@ -67,7 +77,7 @@
 115C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\string\virtual\fontcolor.js133629884071285317 0
 113C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\typed-array\find-index.js133629884070044291 0
 127C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\object-get-own-property-symbols.js133629884081420115 0
-72C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\index.html133631919310289761 0
+72C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\index.html133632877454887325 0
 80C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@lmdb133629884183329339 1
 111C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\typed-array\with.js133629884098623857 0
 129C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\typed-array-from-species-and-list.js133629884093518929 0
@@ -123,7 +133,7 @@
 105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\map\group-by.js133629884073428300 0
 109C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\node-addon-api\tools\check-napi.js133629884050114255 0
 123C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\css-select\lib\pseudo-selectors\aliases.d.ts.map133629884052917045 0
-68C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js133631919310299813 1
+68C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js133632877454907702 1
 69C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\img133149793051083509 1
 107C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\htmlnano\lib\modules\minifyJs.js133629884050899175 0
 124C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\modules\esnext.uint8-array.from-base64.js133629884068610380 0
@@ -245,11 +255,11 @@
 103C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\electron-to-chromium\LICENSE133629884047200136 0
 98C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\nullthrows\package.json133629884046008906 0
 113C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\svgo\plugins\convertEllipseToCircle.js133629884054713330 0
-78C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\config.js133628831352045361 0
+78C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\config.js133632908731444739 0
 107C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\number\index.js133629884075493560 0
 122C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\resolver-default\lib\DefaultResolver.js133629884069887606 0
 105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\set-union.js133629884086833807 0
-82C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\controller.js133631923198108588 0
+82C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\controller.js133632908746780436 0
 115C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\csso\node_modules\css-tree\lib\tokenizer133629884100404357 1
 115C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\instance\group-by-to-map.js133629884073408318 0
 107C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\term-size\vendor\macos\.DS_Store133629884044175705 0
@@ -262,12 +272,12 @@
 115C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\lmdb\dependencies\lmdb-data-v1\libraries133629884046401376 1
 121C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\caniuse-lite\data\features\multibackgrounds.js133629884064086486 0
 90C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\srcset\index.js133629884044101874 0
-79C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\helpers.js133628831352055381 0
-77C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\model.js133631929305845849 0
+79C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\helpers.js133632908746641939 0
+77C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\model.js133632910090614112 0
 102C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\htmlparser2\lib\Parser.d.ts133629884050382456 0
-74C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\views133631919310324309 1
+74C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\views133632877454919998 1
 99C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\node-gyp-build\README.md133629884048332105 0
-88C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\views\recipeView.js133631919310324309 0
+88C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\src\js\views\recipeView.js133632889735348132 0
 111C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\caniuse-lite\data\features\brotli.js133629884056864591 0
 120C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\node-gyp-build-optional-packages\package.json133629884047760472 0
 109C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\modules\es.symbol.match.js133629884065817166 0
@@ -317,8 +327,6 @@
 103C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\es\number\epsilon.js133629884063853094 0
 102C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\ordered-binary\package.json133629884048272272 0
 128C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\call-with-safe-iteration-closing.js133629884060900326 0
-80C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\chalk133629884042015463 1
-119C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\lmdb\node_modules\node-addon-api\except.gypi133629884095859620 0
 136C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\core\test\fixtures\common-targets-ignore\package.json133629884095917021 0
 114C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\string\virtual\link.js133629884079427803 0
 115C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\lmdb\dependencies\lz4\lib\dll\liblz4.def133629884057444154 0
@@ -386,6 +394,8 @@
 110C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\node-releases\data\release-schedule133629884041349412 1
 83C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\boolbase133629884040524941 1
 86C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\buffer-from133629884040790918 1
+80C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\chalk133629884042015463 1
+119C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\lmdb\node_modules\node-addon-api\except.gypi133629884095859620 0
 104C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\sass\types\legacy\render.d.ts133629884055827197 0
 81C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\terser133629884054063954 1
 113C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\stable\object\define-setter.js133629884062963423 0
@@ -1480,15 +1490,6 @@
 92C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\terser\PATRONS.md133629884054028808 0
 111C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\instance\pad-start.js133629884082515750 0
 109C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\array\to-spliced.js133629884091290689 0
-171C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\subfolder1\subfolder2133629884087214338 1
-121C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\css-select\lib\pseudo-selectors\pseudos.js.map133629884055018771 0
-105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\source-map-js\lib\array-set.js133629884040424763 0
-108C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\array\to-sorted.js133629884091006179 0
-95C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\htmlnano\LICENSE.txt133629884056525878 0
-116C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\lmdb\node_modules\node-addon-api\index.js133629884097030452 0
-99C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@lezer\lr\dist\index.cjs133629884098914803 0
-108C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\svgo\plugins\removeUselessDefs.js133629884057110052 0
-91C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\terser\README.md133629884054276785 0
 109C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\modules\es.string.blink.js133629884065431422 0
 106C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\instance\concat.js133629884061766391 0
 87C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\terser\tools133629884054332709 1
@@ -1840,11 +1841,11 @@
 90C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\source-map\dist133629884048946361 1
 91C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\stable\README.md133629884040545010 0
 94C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\srcset\package.json133629884044529571 0
-97C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\stable\promise133629884098482887 1
-87C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\sass\LICENSE133629884040442011 0
 106C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\caniuse-lite\data\regions\MG.js133629884063955158 0
 103C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\source-map-support\README.md133629884042472712 0
 112C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\string\trim-right.js133629884092933513 0
+97C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\stable\promise133629884098482887 1
+87C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\sass\LICENSE133629884040442011 0
 118C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\source-map-support\register-hook-require.js133629884040524941 0
 141C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\css-select\node_modules\entities\lib\esm\decode_codepoint.d.ts.map133629884098818782 0
 103C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\nth-check\lib\compile.js.map133629884043374891 0
@@ -5008,8 +5009,8 @@
 104C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\stable\object\seal.js133629884086267531 0
 116C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\stable\object\set-prototype-of.js133629884086726689 0
 109C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\stable\object\to-string.js133629884091967171 0
-107C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\stable\number\epsilon.js133629884063873092 0
 141C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\clean\TypeSelector.js133629884052218055 0
+107C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\stable\number\epsilon.js133629884063873092 0
 107C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\symbol\match.js133629884080166328 0
 113C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\core\test\EntryRequest.test.js133629884091442020 0
 105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\stable\number\index.js133629884076233475 0
@@ -5860,7 +5861,6 @@
 112C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\math-float-round.js133629884080427143 0
 106C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\object\assign.js133629884058345169 0
 107C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\math-fround.js133629884080427143 0
-104C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\string\search.js133629884086342578 0
 106C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\math-log10.js133629884080442218 0
 106C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\math-scale.js133629884080452325 0
 105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\internals\math-sign.js133629884080472359 0
@@ -6051,6 +6051,7 @@
 105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\string\pad-end.js133629884082465722 0
 105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\string\replace.js133629884085550616 0
 109C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\array\virtual\flat.js133629884070970898 0
+104C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\string\search.js133629884086342578 0
 143C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\Hash.js133629884053412595 0
 113C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@parcel\transformer-babel\package.json133629884065504829 0
 103C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\full\string\small.js133629884087325492 0
@@ -6780,7 +6781,7 @@
 122C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\number\virtual\to-precision.js133629884090723667 0
 112C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\@swc\helpers\lib\_array_with_holes.js133629884056159633 0
 104C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\math\cbrt.js133629884061063293 0
-89C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.f7626f62.css.map133631922305821045 0
+89C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.f7626f62.css.map133632877454872130 0
 105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\math\clamp.js133629884061154311 0
 105C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\math\clz32.js133629884061264506 0
 104C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\features\math\cosh.js133629884062456246 0
@@ -7559,7 +7560,7 @@
 116C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\number\min-safe-integer.js133629884080716696 0
 111C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\number\parse-float.js133629884082625074 0
 114C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\number\to-exponential.js133629884090246114 0
-77C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.html133631922309354001 0
+77C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.html133632877631574684 0
 122C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\number\virtual\to-exponential.js133629884090256195 0
 116C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\number\virtual\to-fixed.js133629884090306168 0
 120C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\node_modules\core-js\actual\number\virtual\to-precision.js133629884090692851 0
@@ -9575,6 +9576,6 @@
 85C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\icons.21bad73c.svg133631922307522497 0
 85C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\icons.dfd7a6db.svg133631922308394346 0
 88C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.62406edb.js.map133283802130256523 0
-84C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.e37f48ea.js133631929302426351 0
-88C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.e37f48ea.js.map133631929302446335 0
+84C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.e37f48ea.js133632910087801518 0
+88C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.e37f48ea.js.map133632910087836596 0
 85C:\Users\darka\Desktop\javascript-learning\18-forkify\starter\dist\index.f7626f62.css133631922305795938 0
