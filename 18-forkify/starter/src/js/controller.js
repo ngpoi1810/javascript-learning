@@ -1,5 +1,6 @@
 import * as model from './model.js';
 
+import { MODAL_CLOSE_SEC } from './config.js';
 import recipeView from './views/recipeView.js';
 import searchView from './views/searchView.js';
 import resultView from './views/resultView.js';
@@ -23,7 +24,7 @@ const controlRecipe = async function () {
     bookmarksView.update(model.state.bookmarks);
     // Vì bên model là một Promise nên khi gọi model bên này thêm "await" vào
     await model.loadRecipe(id);
-    
+
     //2 rendering recipe
     recipeView.render(model.state.recipe);
   } catch (err) {
@@ -63,16 +64,36 @@ const controlAddBookmark = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
-// const controlBookmarks = function () {
-//   bookmarksView.render(model.state.bookmarks);
-// };
+const controlBookmarks = function () {
+  bookmarksView.render(model.state.bookmarks);
+};
+
+const controlAddRecipe = async function (newRecipe) {
+  // console.log(newRecipe);
+  try {
+    await model.uploadRecipe(newRecipe);
+
+    recipeView.render(model.state.recipe);
+
+    addRecipeView.renderMessage();
+
+    // Close form window
+    setTimeout(function () {
+      addRecipeView.toggleWindow();
+    }, MODAL_CLOSE_SEC);
+  } catch (err) {
+    console.error('💥' + err);
+    addRecipeView.renderError(err.message);
+  }
+};
 
 function init() {
-  bookmarksView.addHandlerRender(controlAddBookmark);
+  bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipe);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandleClick(controlPagination);
+  addRecipeView.addHandlerUpload(controlAddRecipe);
 }
 init();
